@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A318FCC421917ED6002ED4D1 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A318FCC321917ED6002ED4D1 /* ViewController1.swift */; };
+		A36A37E02164A0BD00F87E25 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36A37DF2164A0BD00F87E25 /* SoundManager.swift */; };
+		A3C302632133B7A300C55A91 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C302622133B7A300C55A91 /* Card.swift */; };
+		A3C302652133B82C00C55A91 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C302642133B82C00C55A91 /* CardModel.swift */; };
+		A3C302672133BD1700C55A91 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C302662133BD1700C55A91 /* CardCollectionViewCell.swift */; };
+		A3C74D9821636543000785A8 /* shuffle.wav in Resources */ = {isa = PBXBuildFile; fileRef = A3C74D9421636543000785A8 /* shuffle.wav */; };
+		A3C74D9921636543000785A8 /* cardflip.wav in Resources */ = {isa = PBXBuildFile; fileRef = A3C74D9521636543000785A8 /* cardflip.wav */; };
+		A3C74D9A21636543000785A8 /* dingcorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = A3C74D9621636543000785A8 /* dingcorrect.wav */; };
+		A3C74D9B21636543000785A8 /* dingwrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = A3C74D9721636543000785A8 /* dingwrong.wav */; };
+		A3C74D9E216365BD000785A8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3C74D9D216365BD000785A8 /* AVFoundation.framework */; };
 		A3FC22A32133B26B00530771 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FC22A22133B26B00530771 /* AppDelegate.swift */; };
 		A3FC22A52133B26B00530771 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FC22A42133B26B00530771 /* ViewController.swift */; };
 		A3FC22A82133B26B00530771 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FC22A62133B26B00530771 /* Main.storyboard */; };
@@ -15,6 +25,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A318FCC321917ED6002ED4D1 /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
+		A36A37DF2164A0BD00F87E25 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		A3C302622133B7A300C55A91 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		A3C302642133B82C00C55A91 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		A3C302662133BD1700C55A91 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		A3C74D9421636543000785A8 /* shuffle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shuffle.wav; sourceTree = "<group>"; };
+		A3C74D9521636543000785A8 /* cardflip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cardflip.wav; sourceTree = "<group>"; };
+		A3C74D9621636543000785A8 /* dingcorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingcorrect.wav; sourceTree = "<group>"; };
+		A3C74D9721636543000785A8 /* dingwrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingwrong.wav; sourceTree = "<group>"; };
+		A3C74D9D216365BD000785A8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A3FC229F2133B26B00530771 /* MatchGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FC22A22133B26B00530771 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3FC22A42133B26B00530771 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +49,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3C74D9E216365BD000785A8 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A3C74D93216364F8000785A8 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				A3C74D9521636543000785A8 /* cardflip.wav */,
+				A3C74D9621636543000785A8 /* dingcorrect.wav */,
+				A3C74D9721636543000785A8 /* dingwrong.wav */,
+				A3C74D9421636543000785A8 /* shuffle.wav */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		A3C74D9C216365BD000785A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3C74D9D216365BD000785A8 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A3FC22962133B26B00530771 = {
 			isa = PBXGroup;
 			children = (
 				A3FC22A12133B26B00530771 /* MatchGame */,
 				A3FC22A02133B26B00530771 /* Products */,
+				A3C74D9C216365BD000785A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +95,18 @@
 		A3FC22A12133B26B00530771 /* MatchGame */ = {
 			isa = PBXGroup;
 			children = (
+				A3C74D93216364F8000785A8 /* New Group */,
 				A3FC22A22133B26B00530771 /* AppDelegate.swift */,
 				A3FC22A42133B26B00530771 /* ViewController.swift */,
+				A3C302642133B82C00C55A91 /* CardModel.swift */,
+				A3C302622133B7A300C55A91 /* Card.swift */,
+				A3C302662133BD1700C55A91 /* CardCollectionViewCell.swift */,
 				A3FC22A62133B26B00530771 /* Main.storyboard */,
 				A3FC22A92133B26D00530771 /* Assets.xcassets */,
 				A3FC22AB2133B26D00530771 /* LaunchScreen.storyboard */,
 				A3FC22AE2133B26D00530771 /* Info.plist */,
+				A36A37DF2164A0BD00F87E25 /* SoundManager.swift */,
+				A318FCC321917ED6002ED4D1 /* ViewController1.swift */,
 			);
 			path = MatchGame;
 			sourceTree = "<group>";
@@ -96,6 +143,7 @@
 				TargetAttributes = {
 					A3FC229E2133B26B00530771 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -122,9 +170,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3C74D9821636543000785A8 /* shuffle.wav in Resources */,
+				A3C74D9B21636543000785A8 /* dingwrong.wav in Resources */,
 				A3FC22AD2133B26D00530771 /* LaunchScreen.storyboard in Resources */,
 				A3FC22AA2133B26D00530771 /* Assets.xcassets in Resources */,
 				A3FC22A82133B26B00530771 /* Main.storyboard in Resources */,
+				A3C74D9921636543000785A8 /* cardflip.wav in Resources */,
+				A3C74D9A21636543000785A8 /* dingcorrect.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +188,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3FC22A52133B26B00530771 /* ViewController.swift in Sources */,
+				A3C302652133B82C00C55A91 /* CardModel.swift in Sources */,
+				A3C302632133B7A300C55A91 /* Card.swift in Sources */,
+				A3C302672133BD1700C55A91 /* CardCollectionViewCell.swift in Sources */,
+				A318FCC421917ED6002ED4D1 /* ViewController1.swift in Sources */,
 				A3FC22A32133B26B00530771 /* AppDelegate.swift in Sources */,
+				A36A37E02164A0BD00F87E25 /* SoundManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +338,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W776T554GZ;
 				INFOPLIST_FILE = MatchGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -288,7 +346,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Calvin.MatchGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -298,6 +356,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W776T554GZ;
 				INFOPLIST_FILE = MatchGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,7 +364,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Calvin.MatchGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
